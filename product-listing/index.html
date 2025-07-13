@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Product Listing</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>🛍 Product Explorer</h1>
+      <button id="theme-toggle">🌙</button>
+    </header>
+
+    <div class="controls">
+      <input type="text" id="search" placeholder="Search products...">
+      <select id="category-filter">
+        <option value="All">All Categories</option>
+        <option value="Clothing">Clothing</option>
+        <option value="Electronics">Electronics</option>
+        <option value="Books">Books</option>
+        <option value="Accessories">Accessories</option>
+        <option value="Furniture">Furniture</option>
+        <option value="Groceries">Groceries</option>
+        <option value="Fitness">Fitness</option>
+      </select>
+      <select id="sort-options">
+        <option value="default">Sort By</option>
+        <option value="price-asc">Price: Low to High</option>
+        <option value="price-desc">Price: High to Low</option>
+        <option value="rating">Rating</option>
+      </select>
+    </div>
+
+    <div id="product-list" class="product-grid"></div>
+  </div>
+
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+
+  <footer>
+    <p>Made by Venkata Bhavya &copy; 2025 </p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
