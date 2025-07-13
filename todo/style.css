@@ -1,0 +1,121 @@
+/* Base theme */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f3f4f6;
+  color: #111;
+  transition: all 0.3s ease;
+}
+
+body.dark {
+  background: #1f2937;
+  color: #f3f4f6;
+}
+
+.container {
+  max-width: 600px;
+  margin: 3em auto;
+  background: #fff;
+  padding: 2em;
+  border-radius: 12px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+body.dark .container {
+  background: #374151;
+}
+
+/* Header layout */
+.header-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5em;
+}
+
+#toggle-theme {
+  background: none;
+  border: none;
+  font-size: 1.4em;
+  cursor: pointer;
+  color: inherit;
+}
+
+/* Form layout */
+form {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 1.5em;
+}
+
+input,
+select,
+button {
+  padding: 0.6em;
+  font-size: 1em;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+input {
+  flex: 2;
+}
+
+select {
+  flex: 1;
+}
+
+button[type="submit"] {
+  background: #3b82f6;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+/* Task list */
+ul#task-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+ul#task-list li {
+  background: #e5e7eb;
+  padding: 0.5em 0.8em;
+  border-radius: 8px;
+  margin-bottom: 0.4em;
+  font-weight: 500;
+  font-size: 0.95em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: transform 0.2s;
+}
+
+ul#task-list li:hover {
+  transform: scale(1.02);
+}
+
+body.dark ul#task-list li {
+  background: #4b5563;
+}
+
+/* Hide until tasks exist */
+.hidden {
+  display: none;
+}
+
+/* Delete button */
+.delete-btn {
+  background: transparent;
+  border: none;
+  color: crimson;
+  font-size: 1.1em;
+  margin-left: 15px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.delete-btn:hover {
+  transform: scale(1.3);
+}
